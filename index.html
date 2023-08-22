@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob's Blog</title>
+    <link rel="stylesheet" href="styles/global_styles.css">
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="home-hero">
+            <h1>Jacob Ortiz</h1>
+            <div class="profile-picture">
+                <img src="images/profile-picture.jpg">
+            </div>
+        </div>
+        <div class="blog-posts-container">
+            <div id="createPostContainer" class="create-post-container">
+                <div class="create-post">
+                    <form action="https://sheetdb.io/api/v1/wh2e3ebez0789" method="post" id="sheetdb-form-1">
+                        <div class="create-post-elements">
+                            <img src="images/profile-picture.jpg">
+                            <input class="post-title" type="text" name="data[post_header]" required
+                                placeholder="Message title...">
+                                <input class="post-url" type="text" name="data[post_img]"
+                                placeholder="Image URL (Optional)">
+                                <input id="postDate" style="opacity: 0; width: 0; height: 0;" type="text" name="data[post_date]"
+                                placeholder="Image URL (Optional)">
+                        </div>
+                        <textarea id="createMessage" name="data[post_txt]" required
+                            placeholder="What's on your mind, Jacob?"></textarea>
+                        <input type="submit" value="Post" name="Post">
+                    </form>
+                </div>
+            </div>
+            <div class="blog-posts" id="blogPosts"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="scripts/app.js"></script>
+    <script>
+        var form1 = document.getElementById('sheetdb-form-1');
+        form1.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form1.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form-1")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // you can put any JS code here
+                window.location = 'index.html', '_blank';
+
+            });
+        });
+    </script>
+</body>
+
+</html>

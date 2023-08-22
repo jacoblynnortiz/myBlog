@@ -1,0 +1,233 @@
+.wrapper {
+    width: 100%;
+    min-height: 10px;
+}
+
+.home-hero {
+    width: 100%;
+    max-width: 2200px;
+    height: 600px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-hero h1 {
+    padding: 100px;
+    text-align: center;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.profile-picture {
+    width: 375px;
+    height: 375px;
+    position: absolute;
+    bottom: -100px;
+    left: calc(50% - 200px);
+}
+
+.profile-picture img {
+    width: 375px;
+    height: 375px;
+    border: 15px solid #fff;
+    border-radius: 50%;
+}
+
+.blog-posts-container {
+    width: 100%;
+    min-height: 10px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-posts-container h2 {
+    font-size: 3.4rem;
+}
+
+.blog-posts {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-post {
+    width: 100%;
+    min-height: 100px;
+    margin: 25px;
+    padding: 15px;
+    background-color: lightgrey;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.blog-post h3 {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #000;
+    padding-bottom: 25px;
+}
+
+.blog-post p {
+    font-size: 1.4rem;
+    color: #000;
+    width: 90%;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.blog-post img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 45px;
+}
+
+.blog-post span {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: rgb(108, 108, 108);
+}
+
+.create-post-container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.create-post {
+    width: 100%;
+    min-height: 10px;
+    margin: 25px;
+    margin-bottom: 0;
+    min-height: 100px;
+    padding: 15px;
+    background-color: lightgrey;
+    border-radius: 12px;
+}
+
+.create-post-elements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-post img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 7.5px;
+}
+
+.post-title {
+    width: 70%;
+    padding: 15px;
+    border-radius: 33px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 1.1rem;
+    outline: none;
+    margin: 7.5px;
+}
+
+.post-url {
+    width: 30%;
+    padding: 15px;
+    border-radius: 33px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 1.1rem;
+    outline: none;
+    margin: 7.5px;
+}
+
+.create-post textarea {
+    width: 100%;
+    min-height: 10px;
+    max-height: 500px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    outline: none;
+    resize: none;
+}
+
+.create-post input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    height: 45px;
+    border-radius: 8px;
+    margin-top: 7.5px;
+    outline: none;
+    border: none;
+    border: 3px solid #3c7cb9;
+    background-color: #3c7cb9;
+    transition: .3s;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 15px;
+    display: block;
+    margin: 15px auto;
+}
+
+.create-post input[type="submit"]:hover {
+    background-color: transparent;
+    color: #3c7cb9;
+}
+
+@media screen and (max-width: 550px) {
+    .create-post img {
+        display: none;
+    }
+    .create-post-elements {
+        flex-direction: column;
+    }
+    .post-title, .post-url {
+        width: 100%;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        left: calc(50% - 190px);
+    }
+    .blog-posts-container {
+        padding-top: 220px;
+    }
+    .home-hero h1 {
+        font-size: 3.4rem;
+    }
+}
