@@ -36,10 +36,12 @@
 .my-profession {
     font-size: 2.8rem;
     padding-bottom: 15px;
+    display: flex;
 }
 
 .typing {
     color: #894fcc;
+    margin-left: 12px;
 }
 
 .home-info p {
@@ -89,8 +91,7 @@
 
 @media screen and (max-width: 750px){
     .home-info img {
-        top: 0;
-        right: -40%;
+        display: none;
     }
 }
 
@@ -104,5 +105,16 @@
 
     .my-profession {
         font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .home-info .name,
+    .my-profession {
+        display: block;
+    }
+
+    .typing {
+        margin-left: 0;
     }
 }
