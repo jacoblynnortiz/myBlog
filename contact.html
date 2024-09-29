@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ja-kobe | Contact</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/global_styles.css">
+    <link rel="stylesheet" href="styles/nav_styles.css">
+    <link rel="stylesheet" href="styles/contact_styles.css">
+    <link rel="stylesheet" href="styles/footer_styles.css">
+</head>
+
+<body style="background-image: url(images/banner.webp); background-position: top center; background-repeat: no-repeat;">
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-menu">
+            <div class="content">
+                <div class="logo"><a href="index.html"><img src="images/logo.png"> Ja-kobe</a></div>
+                <ul class="links">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="separator">
+                        <div></div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        </nav>
+    </div>
+    <div class="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <h3>Let's get in touch.</h3>
+            <div class="contact-form-inputs">
+              <form action="scripts/contactform.php" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="email" placeholder="E-mail" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit" onclick="alert('sorry this feature is not yet implimented')" name="submit">Send</button>
+              </form>
+            </div>
+          </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-container" id="footer">
+        <div class="footer-wrapper">
+            <div style="position: relative;" class="footer">
+                <div class="footer-logo"><img src="images/logo.png"></div>
+                <h1>Ja-kobe</h1>
+                <p style="text-align: center;">Like what you see? Follow me on social media to keep up to date with
+                    all my
+                    content!</p>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <h3>Copyright © 2024, Ja-kobe | All Rights Reserved.</h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="app/main.js"></script>
+</body>
+
+</html>

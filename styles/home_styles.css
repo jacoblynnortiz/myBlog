@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'handwriting';
+    src: url('handwriting.ttf');
+  }
+
+.home {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    padding-top: 90px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.home-hero {
+    width: 100%;
+    min-height: 200px;
+}
+
+.home-info {
+    padding: 200px 100px;
+    z-index: 10;
+    position: relative;
+}
+
+.hello {
+    font-size: 1.6rem;
+}
+
+.name {
+    color: #894fcc;
+    font-family: 'handwriting', sans-serif;
+    font-size: 1.8rem;
+}
+
+.my-profession {
+    font-size: 2.8rem;
+    padding-bottom: 15px;
+}
+
+.typing {
+    color: #894fcc;
+}
+
+.home-info p {
+    font-size: 1.2rem;
+    max-width: 60ch;
+    padding-bottom: 25px;
+}
+
+.home-info a {
+    color: #fff;
+    background-color: #894fcc;
+    border: 2px solid #894fcc;
+    border-radius: 15px;
+    padding: 10px 18px;
+    transition: .3s;
+    font-size: 1.2rem;
+}
+
+.home-info img {
+    width: 600px;
+    opacity: .3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.home-info a:hover {
+    color: #894fcc;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1250px){
+    .home {
+      max-width: 100%;
+      padding: 25px;
+      padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .home-info img {
+        top: 0;
+        right: -20%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .home-info img {
+        top: 0;
+        right: -40%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .home-info img {
+        width: 450px;
+    }
+    .home-info {
+        padding: 50px 25px;
+    }
+
+    .my-profession {
+        font-size: 2.4rem;
+    }
+}

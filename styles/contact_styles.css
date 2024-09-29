@@ -1,0 +1,116 @@
+.contact {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 450px;
+    max-width: 100%;
+    min-height: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+    padding-top: 150px;
+}
+
+.contact-form h2 {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 25px;
+    left: -20%;
+    color: #fff;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-left: 15px;
+}
+
+.contact-form-inputs {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form-inputs input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    margin: 25px 0;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    caret-color: #fff;
+    color: #fff;
+    transition: .3s;
+}
+
+.contact-form-inputs textarea {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    resize: none;
+    outline: none;
+    caret-color: #fff;
+    color: #fff;
+    transition: .3s;
+}
+
+.contact-form-inputs input:focus,
+.contact-form-inputs textarea:focus {
+    border-bottom: 1px solid #894fcc;
+}
+
+.contact-form-inputs button {
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #101010;
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.contact-form-inputs button:hover {
+    background-color: transparent;
+    color: #894fcc;
+    border: 3px solid #894fcc;
+}
+
+@media screen and (max-width: 1100px) {
+    .contact-form h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 25px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact-form {
+        width: 90%;
+    }
+}

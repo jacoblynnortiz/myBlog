@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ja-kobe | Blog</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/global_styles.css">
+    <link rel="stylesheet" href="styles/nav_styles.css">
+    <link rel="stylesheet" href="styles/blog_styles.css">
+    <link rel="stylesheet" href="styles/footer_styles.css">
+</head>
+
+<body style="background-image: url(images/banner.webp); background-position: top center; background-repeat: no-repeat;">
+    <div id="nsfwWarning" class="nsfw-warning">
+        <div style="background-image: url(images/banner.webp); background-position: top center; background-repeat: no-repeat;">
+            <i style="font-size: 2.4rem;" class="fa-solid fa-eye-slash"></i>
+            <h2>Sensitive Content</h2>
+            <p>This media contains sensitive content that some people may find offensive<br><br>- not for the light hearted -</p>
+            <button onclick="showContent();">Show Now</button>
+        </div>
+    </div>
+    <a href="#"><div class="backup"><i class="fa-solid fa-angle-up"></i></div></a>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-menu">
+            <div class="content">
+              <div class="logo"><a href="index.html"><img src="images/logo.png"> Ja-kobe</a></div>
+              <ul class="links">
+                <li><a href="blog.html">Blog</a></li>
+                <li class="separator">
+                  <div></div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          </nav>
+    </div>
+    <div class="blog">
+        <div class="post-creater-container" id="postCreator" style="display: none;">
+            <div class="post-creater" id="postCreater">
+                <div class="profile-pic"><img src="images/profile.jpg"></div>
+                <form action="https://sheetdb.io/api/v1/6q955ouwwiue5" method="post" id="sheetdb-form-1">
+                    <input required placeholder="uuid" type="text" name="data[uuid]" id="uuidInput">
+                    <input required placeholder="timestamp" type="text" name="data[timestamp]" id="timestampInput">
+                    <input required placeholder="title" type="text" name="data[title]">
+                    <input required placeholder="Whats on your mind, Ja-kobe?" type="text" name="data[body]"></textarea>
+                    <input type="submit" name="Post" value="Post">
+                </form>
+            </div>
+        </div>
+        <div class="posts-container" id="postsContainer"></div>
+    </div>
+    <!-- footer -->
+    <div class="footer-container" id="footer">
+        <div class="footer-wrapper">
+            <div style="position: relative;" class="footer">
+                <div class="footer-logo"><img src="images/logo.png"></div>
+                <h1>Ja-kobe</h1>
+                <p style="text-align: center;">Like what you see? Follow me on social media to keep up to date with
+                    all my
+                    content!</p>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <h3>Copyright © 2024, Ja-kobe | All Rights Reserved.</h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/createPage.js"></script>
+    <script src="app/createPost.js"></script>
+</body>
+
+</html>
