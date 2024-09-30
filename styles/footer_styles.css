@@ -2,6 +2,8 @@
     width: 100%;
     min-height: 350px;
     background: #44444449;
+    border-top-left-radius: 70% 50%;
+    border-top-right-radius: 70% 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,5 +113,9 @@
     }
     .footer-logo img {
         display: none;
+    }
+    .footer-wrapper {
+        border-top-left-radius: 70% 30%;
+        border-top-right-radius: 70% 30%;
     }
 }

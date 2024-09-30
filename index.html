@@ -36,7 +36,13 @@
                 <h3 class="my-profession">I'm a <br><span class="typing"></span></h3>
                 <p>I am an anonymous blogger, follow my blog to read the updates I make to it and see where life takes
                     me.</p>
-                <a href="blog.html">View Blog</a>
+                <div class="subscribe-widget">
+                    <form action="https://sheetdb.io/api/v1/4tmk119mbthgb" method="post" id="sheetdb-form-1">
+                        <input required placeholder="Type your email address" name="data[email]" type="email">
+                        <button input type="submit" name="Post" class="subscribe-btn">Subscribe <i
+                                class="fa-solid fa-arrow-right" style="padding-left: 10px;"></i></button>
+                    </form>
+                </div>
                 <img src="images/logo.png">
             </div>
         </div>
@@ -71,6 +77,22 @@
         });
     </script>
     <script src="app/main.js"></script>
+    <script>
+        var form1 = document.getElementById('sheetdb-form-1');
+        form1.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form1.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form-1")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // you can put any JS code here
+                window.location = 'blog.html', '_blank';
+
+            });
+        });
+    </script>
 </body>
 
 </html>
