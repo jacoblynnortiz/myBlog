@@ -159,4 +159,12 @@
     .typing {
         margin-left: 0;
     }
+    .subscribe-widget button {
+        font-size: 1rem;
+        padding: 6px 8px;
+        border-radius: 22px;
+    }
+    .subscribe-widget {
+        padding-right: 7.5px;
+    }
 }
